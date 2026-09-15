@@ -1,18 +1,13 @@
 {
-  "name": "portfolio-server",
+  "name": "akanksha-eazybytes",
   "version": "1.0.0",
-  "description": "Portfolio CMS backend API",
-  "main": "dist/index.js",
-  "type": "commonjs",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "seed": "tsx src/seed.ts",
-    "typecheck": "tsc --noEmit",
-    "prisma:generate": "prisma generate",
-    "prisma:migrate": "prisma migrate dev",
-    "prisma:push": "prisma db push"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
@@ -20,10 +15,13 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.0",
     "express": "^4.21.0",
+    "framer-motion": "^11.11.17",
     "helmet": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
     "nodemailer": "^6.9.16",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "socket.io": "^4.8.0",
     "zod": "^3.23.0"
   },
@@ -35,8 +33,11 @@
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.0.0",
     "@types/nodemailer": "^6.4.17",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "prisma": "^5.22.0",
     "tsx": "^4.19.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0"
   }
 }
